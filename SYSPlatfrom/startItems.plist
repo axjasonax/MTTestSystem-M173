@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>Serial</string>
+		<key>productType</key>
+		<string>ALL</string>
+		<key>hardwareName</key>
+		<string>SCAN</string>
+		<key>testName</key>
+		<string>StartTest</string>
+		<key>testCommand</key>
+		<string>+</string>
+		<key>endStr</key>
+		<string>Len17</string>
+		<key>timeout</key>
+		<integer>2000</integer>
+		<key>numberOfRepeat</key>
+		<string>3</string>
+		<key>isNeedTest</key>
+		<true/>
+		<key>isFailToStop</key>
+		<string>YES</string>
+		<key>isCoatingItem</key>
+		<string>YES</string>
+		<key>isNeedClosePort</key>
+		<string>YES</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="app" destination="-3" id="ecL-8a-nv0"/>
+                <outlet property="bootMenu" destination="1Xt-HY-uBw" id="POS-iK-cyh"/>
+                <outlet property="loadinterface" destination="cWO-9R-X9G" id="wrF-wH-Bhu"/>
+                <outlet property="slotview1" destination="Uhs-Mp-Hsu" id="boF-aE-9Yt"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="fi5-HV-tVk"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="SYSPlatfrom" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="SYSPlatfrom" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="Setting" keyEquivalent="e" id="UVy-5N-Evo" userLabel="Setting">
+                                <connections>
+                                    <action selector="btnMenuSetting:" target="Voe-Tx-rLC" id="LQY-n4-BtC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="LoopTest" keyEquivalent="l" id="BOF-NM-1cW" userLabel="LoopTest">
+                                <connections>
+                                    <action selector="btnMenuLoopTest:" target="Voe-Tx-rLC" id="AGJ-vw-zjY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Quit SYSPlatfrom" keyEquivalent="q" id="4sb-4s-VLi" userLabel="Quit">
+                                <connections>
+                                    <action selector="btnMenuQuit:" target="Voe-Tx-rLC" id="sN7-T8-oRO"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="SYSPlatfrom" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="1302" height="754"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="1302" height="754"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-Mp-Hsu">
+                        <rect key="frame" x="-1" y="8" width="1304" height="654"/>
+                        <clipView key="contentView" ambiguous="YES" id="Dk6-aL-z8u">
+                            <rect key="frame" x="1" y="1" width="1302" height="652"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jH-5d-OBu">
+                                    <rect key="frame" x="0.0" y="558" width="181" height="94"/>
+                                </view>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="8tv-Kv-6Fv">
+                            <rect key="frame" x="1" y="637" width="1302" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="LE3-Cz-qbs">
+                            <rect key="frame" x="1287" y="1" width="16" height="652"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="9mt-HK-wjo"/>
+            </connections>
+            <point key="canvasLocation" x="550" y="344"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="cWO-9R-X9G" userLabel="load">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="131" width="287" height="107"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="edh-WY-K8C">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRU-IJ-yHb">
+                        <rect key="frame" x="18" y="84" width="86" height="21"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password :" id="hdm-TF-Bgz">
+                            <font key="font" size="14" name=".AppleSystemUIFont"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0y-vf-60d" userLabel="Pwd">
+                        <rect key="frame" x="98" y="84" width="130" height="23"/>
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="BRc-pU-gfd">
+                            <font key="font" metaFont="system" size="14"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </secureTextFieldCell>
+                    </secureTextField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8UY-xz-FsG">
+                        <rect key="frame" x="26" y="32" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P4z-J8-X3W">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="16"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Cancel:" target="5h3-qI-Gcy" id="8cP-2z-qpg"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzc-dn-SJS">
+                        <rect key="frame" x="227" y="82" width="22" height="25"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSCaution" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="K8m-QW-8r4">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-Fv-2Vt">
+                        <rect key="frame" x="151" y="32" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="Enter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8hb-qF-WUb">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="16"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Load:" target="5h3-qI-Gcy" id="dcT-dw-Zi2"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="5h3-qI-Gcy" id="KUp-8y-WQH"/>
+            </connections>
+            <point key="canvasLocation" x="326.5" y="837.5"/>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="vPE-tR-XJA" userLabel="loopTest">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="131" width="199" height="134"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="EVl-bM-rwh">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmE-X3-OzE">
+                        <rect key="frame" x="76" y="91" width="67" height="23"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Times:" id="3tF-KM-mU9">
+                            <font key="font" metaFont="system" size="16"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMO-Kk-Uh4">
+                        <rect key="frame" x="82" y="31" width="54" height="32"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="B2F-C6-lIo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btnSetLoopTest:" target="hKC-wz-KKx" id="mj3-nR-PWX"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B28-Th-gh4">
+                        <rect key="frame" x="61" y="65" width="96" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="10" drawsBackground="YES" id="a1K-EM-KV6">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="ym7-af-ohA"/>
+                            <font key="font" metaFont="system" size="16"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="hKC-wz-KKx" id="zw7-Rd-f39"/>
+            </connections>
+            <point key="canvasLocation" x="272.5" y="1082"/>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Hk4-eg-wZA" userLabel="setting">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="131" width="364" height="101"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="wYB-Rh-c9b">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="hKC-wz-KKx" id="QSB-rs-s0k"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="1271.5"/>
+        </window>
+        <customObject id="5h3-qI-Gcy" userLabel="Load" customClass="LoadInterface">
+            <connections>
+                <outlet property="_btnCaution" destination="pzc-dn-SJS" id="DDu-Uf-xgK"/>
+                <outlet property="_frmLoopTest" destination="vPE-tR-XJA" id="chc-t0-VJH"/>
+                <outlet property="_frmSetting" destination="Hk4-eg-wZA" id="ptm-AG-ATC"/>
+                <outlet property="_tfPassword" destination="P0y-vf-60d" id="jIa-jy-fqh"/>
+                <outlet property="window" destination="cWO-9R-X9G" id="HAl-ZB-sgf"/>
+            </connections>
+        </customObject>
+        <customObject id="hKC-wz-KKx" userLabel="Setting" customClass="Setting">
+            <connections>
+                <outlet property="_frmLoopTest" destination="vPE-tR-XJA" id="8a7-qR-gG1"/>
+                <outlet property="_tfLoopTimes" destination="B28-Th-gh4" id="4M4-du-1Vw"/>
+                <outlet property="menuLoopTest" destination="BOF-NM-1cW" id="Be0-9y-eXw"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="NSCaution" width="32" height="32"/>
+    </resources>
+</document>
